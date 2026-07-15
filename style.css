@@ -777,42 +777,45 @@ IMAGE
 }
 
 .experience-box{
-
     position:absolute;
 
-    left:5px;
+    top:20px;
+    left:20px;
 
-    top:5px;
+    width:170px;
 
-    background:rgba(0,0,0,.85);
+    padding:18px;
 
-    border:1px solid rgba(212,175,55,.45);
+    background:rgba(0,0,0,.75);
 
-    backdrop-filter:blur(10px);
+    backdrop-filter:blur(8px);
 
-    border-radius:18px;
+    border:1px solid rgba(212,175,55,.35);
 
-    padding:10px;
+    border-radius:16px;
 
-    min-width:100px;
-
+    z-index:5;
 }
-
 .experience-box h3{
 
-    font-size:30px;
+font-size:38px;
 
-    color:var(--primary);
+line-height:1;
 
-    margin-bottom:5px;
+margin-bottom:8px;
+
+color:var(--primary);
 
 }
-
 .experience-box span{
 
-    color:#ddd;
+display:block;
 
-    font-size:14px;
+font-size:15px;
+
+line-height:1.5;
+
+color:#ffffff;
 
 }
 
@@ -992,18 +995,19 @@ height:320px;
 
 .experience-box{
 
+top:15px;
+
 left:15px;
 
-right:15px;
+right:auto;
 
-bottom:15px;
+bottom:auto;
 
-min-width:auto;
+width:150px;
 
-padding:18px;
+padding:14px;
 
 }
-
 .experience-box h3{
 
 font-size:34px;
