@@ -255,58 +255,112 @@ cursor:pointer;
 
 }
 
-/* MOBILE */
+/* ==========================================
+   MOBILE HEADER
+========================================== */
 
 @media(max-width:600px){
 
-.top-bar{
+    .top-bar{
+        display:none;
+    }
 
-display:none;
+    .menu-toggle{
+        display:block;
+    }
 
-}
+    .navbar{
+        display:none;
+        position:absolute;
+        left:0;
+        top:80px;
+        width:100%;
+        background:#111;
+    }
 
-.menu-toggle{
+    .navbar.active{
+        display:block;
+    }
 
-display:block;
+    .navbar ul{
+        flex-direction:column;
+        padding:20px;
+        gap:18px;
+    }
 
-}
-
-.navbar{
-
-display:none;
-
-position:absolute;
-
-left:0;
-top:80px;
-
-width:100%;
-
-background:#111;
-
-}
-
-.navbar.active{
-
-display:block;
-
-}
-
-.navbar ul{
-
-flex-direction:column;
-
-padding:20px;
-
-gap:18px;
+    .book-btn{
+        display:none;
+    }
 
 }
 
-.book-btn{
 
-display:none;
+/* ==========================================
+   CHROME ANDROID DESKTOP SITE MODE
+   HEADER FIX
+========================================== */
 
-}
+@media (min-width:601px) and (max-width:1100px){
+
+    .header-container{
+        padding-left:20px;
+        padding-right:20px;
+        gap:20px;
+    }
+
+    .logo{
+        flex-shrink:0;
+    }
+
+    .logo img{
+        width:55px;
+    }
+
+    .logo h2{
+        font-size:21px;
+    }
+
+    .logo span{
+        font-size:9px;
+        letter-spacing:1.5px;
+    }
+
+    .navbar{
+        display:block;
+        flex:1;
+        min-width:0;
+    }
+
+    .navbar ul{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        gap:14px;
+        padding:0;
+        margin:0;
+        white-space:nowrap;
+    }
+
+    .navbar a{
+        font-size:14px;
+    }
+
+    .header-actions{
+        flex-shrink:0;
+    }
+
+    .book-btn{
+        display:inline-flex;
+        align-items:center;
+        justify-content:center;
+        padding:10px 18px;
+        font-size:14px;
+        white-space:nowrap;
+    }
+
+    .menu-toggle{
+        display:none;
+    }
 
 }
 
