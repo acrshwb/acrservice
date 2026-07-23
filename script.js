@@ -23,6 +23,9 @@ menuToggle.addEventListener("click",()=>{
 
 navbar.classList.toggle("active");
 
+ console.log("Menu clicked");
+    console.log("Navbar classes:", navbar.className);
+    
 });
 
 window.addEventListener("scroll",()=>{
